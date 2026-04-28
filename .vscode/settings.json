@@ -1,0 +1,26 @@
+{
+  // ─── Code Runner ──────────────────────────────────────────────
+  "code-runner.runInTerminal": true,          // Ejecuta en la terminal integrada (no en Output)
+  "code-runner.saveFileBeforeRun": true,      // Guarda el archivo antes de ejecutar
+  "code-runner.clearPreviousOutput": true,    // Limpia la salida anterior
+  "code-runner.preserveFocus": false,         // Cambia el foco a la terminal al ejecutar
+  "code-runner.ignoreSelection": false,       // Permite ejecutar solo el código seleccionado
+
+  // Mapa de ejecutores por tipo de archivo
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "ts-node"
+  },
+
+  // Usa el directorio del archivo como CWD (evita errores de ruta)
+  "code-runner.fileDirectoryAsCwd": true,
+
+  // ─── Node.js / ES Modules ────────────────────────────────────
+  // Soporte para archivos .mjs (ES Modules como tu main.mjs)
+  "code-runner.executorMapByFileExtension": {
+    ".mjs": "node --experimental-vm-modules"
+  },
+
+  // ─── Terminal ────────────────────────────────────────────────
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}
